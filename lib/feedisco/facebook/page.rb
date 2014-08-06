@@ -7,3 +7,7 @@ module Feedisco
     end
   end
 end
+
+require "feedisco/facebook/page/discovery"
+
+Feedisco::Facebook::Page.extend Feedisco::Facebook::Page::Discovery
