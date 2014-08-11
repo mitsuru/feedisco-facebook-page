@@ -15,7 +15,7 @@ module Feedisco
 
           harmonized_url = harmonize_url(url)
           uri = URI.parse(harmonized_url)
-          return nil unless uri.hostname == "www.facebook.com"
+          return [] unless uri.hostname == "www.facebook.com"
 
           feeds = []
 
